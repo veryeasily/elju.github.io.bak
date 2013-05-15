@@ -1,4 +1,5 @@
 console.log("I'm alive!")
-$('body').on('click', function(e) {
+$(document).on('click', function(e) {
+    console.log("click detected, why can't I remember how events work?");
     console.log(window.parent);
 });
