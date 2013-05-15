@@ -1,4 +1,4 @@
 $(document.body).on('click', function(e) {
-    console.log(window.parent);
+    window.parent.postMessage(e, "*lju.me");
     console.log("click detected!");
 });
