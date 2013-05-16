@@ -5,3 +5,7 @@ $(document.body).on('click', function(e) {
     window.parent.postMessage('click', 'http://localhost:5000');
     console.log("click detected!");
 });
+
+$('a').on('click', function(e) {
+    e.stopPropagation();
+});
